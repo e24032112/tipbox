@@ -1,17 +1,24 @@
-<!doctype html>
 <html>
     <head>
-        <title>Search</title>
+        <title>test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     </head>
     <body>
-        <div id="buttons">
-            <label> <input id="query" value='cats' type="text"/><button id="search-button" onclick="search()">Search</button></label>
-        </div>
-        <div id="search-container">
+        <header>
+            <h1 class="w100 text-center"><a href="index.html">Youtube Test</a></h1>
+        </header>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form action="#">
+                    <p><input type="text" id="search" placeholder="test" autocomplete="off" class="form-control"/></p>
+                    <p><input type="submit" id="Search" class="form-control btn btn-primary w100"></p>
+                </form>
+                <div id="results"></div>
+            </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
         <script src="auth.js"></script>
-        <script src="search.js"></script>
-        <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
     </body>
 </html>
